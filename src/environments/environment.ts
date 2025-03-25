@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  urlApi: 'https://pokeapi.co/api/v2/pokemon/',
+  pokemonApi: 'https://pokeapi.co/api/v2/pokemon/',
 };

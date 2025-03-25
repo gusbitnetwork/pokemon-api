@@ -14,7 +14,7 @@ export class PokemonService {
   private pokeData: IPokemon | any;
 
   constructor(private http: HttpClient) {
-    this.baseURL = environment.urlApi;
+    this.baseURL = environment.pokemonApi;
   }
 
   getPokemon(pokemonName: string): Observable<IPokemon> {
