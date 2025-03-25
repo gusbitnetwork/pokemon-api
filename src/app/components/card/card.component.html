@@ -1,0 +1,13 @@
+<div class="container">
+  <div *ngFor="let pokemon of pokemons" class="card">
+    <div>
+      <div class="information">
+        <p class="name">{{ pokemon.name | titlecase }}</p>
+        <div class="element">
+          <span *ngFor="let t of pokemon.types">{{ t.type.name }}</span>
+        </div>
+      </div>
+    </div>
+    <img [src]="pokemon.sprites.front_default" alt="pokemon" />
+  </div>
+</div>
