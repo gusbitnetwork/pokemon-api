@@ -25,6 +25,7 @@ export class CardComponent {
                   name: res.name,
                   sprites: res.sprites,
                   types: res.types,
+                  typeColor: this.service.getTypeColor(res.types[0].type.name) // Obtiene el color del primer tipo
                 });
               },
               error: (res) => console.log(res),
@@ -36,5 +37,8 @@ export class CardComponent {
         console.log(error);
       }
     );
+    
   }
+
+  
 }
